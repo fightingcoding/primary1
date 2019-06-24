@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="155dp"
+            android:text="添加课程"
+            android:textColor="#141414"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="250dp"
+            android:text="课程名"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cName"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="245dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="300dp"
+            android:text="授课老师"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cTeach"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="295dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="350dp"
+            android:text="课程号"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cNum"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="345dp"
+            android:background="#ffffff"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="400dp"
+            android:text="学分"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cScore"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="395dp"
+            android:background="#ffffff"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="460dp"
+            android:background="#69b0ea"
+            android:onClick="addConfirm"
+            android:text="确认添加"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+

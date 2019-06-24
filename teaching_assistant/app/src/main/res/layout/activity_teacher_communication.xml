@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#CCCCCC"
+    tools:context=".teacher.TeacherCommunicationActivity">
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="354dp"
+        android:layout_height="279dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/constraintshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981">
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout2"
+        android:layout_width="354dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/constraintshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147">
+
+    </TableLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="391dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:text="课堂交流"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/actionModeCloseDrawable"
+        android:onClick="back"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@id/textView2"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="322dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/TableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TableLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imagebuttonshape"
+            android:onClick="viewingAttendance"
+            android:scaleType="fitXY"
+            android:src="@drawable/a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imagebuttonshape"
+            android:onClick="viewingVoteResult"
+            android:scaleType="fitXY"
+            android:src="@drawable/b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imagebuttonshape"
+            android:onClick="createTest"
+            android:scaleType="fitXY"
+            android:src="@drawable/c" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:layout_weight="1"
+        android:text="查看课堂投票"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:text="发起测试"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="查看签到"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="341dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/shape1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TableLayout2"
+        app:layout_constraintVertical_bias="0.125"></LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="192dp"
+        android:layout_height="82dp"
+        android:orientation="vertical"
+        android:showDividers="beginning|end"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="359dp">
+
+        <TableRow
+            android:orientation="horizontal"
+            android:showDividers="beginning|end">
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow android:showDividers="beginning|end">
+
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

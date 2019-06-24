@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="125dp"
+            android:text="教学辅助系统"
+            android:textColor="#141414"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="220dp"
+            android:text="账号"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_account"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="215dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="280dp"
+            android:text="密码"
+            android:textColor="#141414"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="275dp"
+            android:background="#ffffff"
+            android:ems="10" />
+        <TextView
+            android:id="@+id/roleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/roleBtn"
+            android:layout_alignStart="@id/textView2"
+            android:layout_alignBottom="@id/roleBtn"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:text="角色"/>
+
+        <RadioGroup
+            android:id="@+id/roleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="320dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/teacherBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/studentBtn"
+                android:layout_alignStart="@id/login_password"
+                android:layout_alignBottom="@id/studentBtn"
+                android:text="教师"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/studentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学生"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/login_btn"
+            android:layout_alignStart="@id/textView2"
+            android:layout_alignBottom="@id/login_btn"
+            android:background="#69b0ea"
+
+            android:text="注册"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="193dp"
+            android:layout_marginTop="360dp"
+            android:background="#ffffff"
+            android:text="登录"
+            android:textColor="#262525"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

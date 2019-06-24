@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.design.teaching_assistant">
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".teacher.TeacherViewingAttendanceActivity"></activity>
+        <activity android:name=".teacher.TAddCourseActivity" />
+        <activity android:name=".teacher.TeacherAddCourseActivity" />
+        <activity android:name=".student.StudentJoinCourseActivity" />
+        <activity android:name=".teacher.TeacherUploadHomeworkActivity" />
+        <activity android:name=".student.StudentCourseCommentSuccessActivity" />
+        <activity android:name=".student.StudentHomeworkUploadActivity" />
+        <activity android:name=".student.StudentNewClassTestActivity" />
+        <activity android:name=".student.StudentPreviousClassTestActivity" />
+        <activity android:name=".student.StudentClassTestActivity" />
+        <activity android:name=".student.StudentClassVoteActivity" />
+        <activity android:name=".student.StudentAttendanceActivity" />
+        <activity android:name=".student.StudentViewingMoreNoticeActivity" />
+        <activity android:name=".student.StudentViewingHomeworkActivity" />
+        <activity android:name=".student.StudentCourseEndingCommentActivity" />
+        <activity android:name=".student.StudentClassCommunication" />
+        <activity android:name=".student.Student1MainActivity" />
+        <activity android:name=".teacher.TeacherCheckHomeworkConditionActivity" />
+        <activity android:name=".teacher.TeacherCreateTestActivity" />
+        <activity android:name=".teacher.TeacherCheckVoteActivity" />
+        <activity android:name=".teacher.TeacherCreateAttendanceConfirm" />
+        <activity android:name=".teacher.TeacherAddNoticeActivity" />
+        <activity android:name=".teacher.TeacherHomeworkShowActivity" />
+        <activity android:name=".teacher.TeacherCommentShowActivity" />
+        <activity android:name=".teacher.TeacherCommunicationActivity" />
+        <activity android:name=".teacher.Teacher1MainActivity" />
+        <activity android:name=".teacher.TeacherMainActivity" />
+        <activity android:name=".student.StudentMainActivity" />
+        <activity android:name=".RegisterActivity">
+
+            <!--
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.design.teaching_assistant.intent.action.RegisterActivity"/>
+
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.design.teaching_assistant.BmobContentProvider" />
+    </application>
+
+</manifest>
